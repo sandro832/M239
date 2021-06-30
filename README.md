@@ -13,11 +13,11 @@ Wen zum Beispiel Peter seine Emails über Microsoft Outlook von Zuhause aufruft,
 
 Jede gesendete E-Mail durchläuft auf ihrem Weg zum Empfänger eine Reihe von Mailservern. Auch wenn es den Anschein hat, dass eine Nachricht sofort versendet wird, so findet in Wirklichkeit eine komplexe Reihe von Übertragungen statt. Ohne diese Reihe von Mailservern könnten Sie nur E-Mails an Personen senden, deren E-Mail-Adressdomänen mit Ihren eigenen übereinstimmen - d. h. Sie könnten nur Nachrichten von einem example.com-Konto an ein anderes example.com-Konto senden.
 
-## Mailserver ausfindig machen
+### Mailserver ausfindig machen
 
 Der Mailserver lässt sich einfach über das CMD herausfinden. Dort kan man mit dem telnet befehl die MX-Records ganz einfach finden.
 
-BILD
+![Telnet](https://github.com/sandro832/M239/blob/main/Pictures/telnet.PNG)
 
 
 ### SNTP
@@ -54,8 +54,8 @@ POP3 (Post Office Protocol 3) ist die neueste Version des POP Standardprotokolls
 
 Base64 ist ein Binär-zu-Text-Kodierungsschema, das im Allgemeinen für die Übertragung inhaltsbasierter Nachrichten über das Internet verwendet wird. Es funktioniert, indem alle drei Bits der binären Daten in sechs Bit-Einheiten unterteilt werden. Die neu erzeugten Daten werden in einem 64-stelligen Zahlensystem und als sieben Bit langer ASCII-Text dargestellt. Da jedes Bit in zwei Bits aufgeteilt wird, sind die konvertierten Daten 33 Prozent oder ein Drittel größer als die ursprünglichen Daten.
 
+![Base64](https://github.com/sandro832/M239/blob/main/Pictures/Base64.PNG)
 
-Picture
 
 In diesem obigen Beispiel wird die Zeichenkette "THS" mit dem base64-Operator (<<<) auf der Linux-CLI in das base64-Format kodiert. Wir können sehen, dass wir die kodierte Ausgabe erhalten, d. h. VEhTCg==.
 
@@ -66,3 +66,5 @@ Internet Message Access Protocol ist ein Protokoll zum Abrufen und Speichern von
 ### POP3 im Vergleich zu IMAP
 
 IMAP bietet im Vergleich zu POP3 zahlreiche Vorteile, besonders für Fernzugriff auf E-mails. In Produktieven bereichen wird heuzutage praktisch nur noch IMAP vewendet. POP3 wird nur eigentlich nur werwendet wen, man keine andere möglichkeit hat oder nicht umstellen möchte. 
+
+![Vergleich](https://github.com/sandro832/M239/blob/main/Pictures/Vergleich.PNG)
